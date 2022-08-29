@@ -1,5 +1,13 @@
 # ngwordgame
+Tap to proceed to next random word and increment 'ng'ed counter.
 
+Game hosted [here](https://0kadak.github.io/ngwordgame/) saved to gh-pages branch.
+
+Made with [Vue](https://vuejs.org/)
+
+Deployment guide referenced: [this](https://learnvue.co/tutorials/deploy-vue-to-github-pages)
+
+## Vue Template 
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup

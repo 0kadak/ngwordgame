@@ -1,16 +1,24 @@
+
 <script>
+import WordList from './WordList.vue'
+/*
 let worddict=
-['one',
-'two',
-'three',
-'four',
-'five',
-'six',
-'seven']
+['いち',
+'に',
+'さん',
+'よん',
+'ご',
+'ろく',
+'なな']
+*/
+let worddict = WordList
 for (let i=0; i<worddict.length; i++){
     worddict.splice(i,1,{id:i, item: worddict[i]})
 }
 export default{
+  components:{
+    WordList
+  },
   data(){
     return{
       ngword: 'Click to show NG word',
