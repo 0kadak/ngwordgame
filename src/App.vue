@@ -1,6 +1,5 @@
-
 <script>
-import WordList from './WordList.vue'
+import WordList from './WordList.js'
 /*
 let worddict=
 ['いち',
