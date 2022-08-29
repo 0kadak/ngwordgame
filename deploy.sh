@@ -1,26 +1,14 @@
 #!/usr/bin/env sh
 
+#in directory pulled from remote repo (DIR=origin)
+#trying to push to gh-pages(only build files), a subtree of main(all files)
+
 # abort on errors
 set -e
 
 # build
 npm run build
 
-# navigate into the build output directory
-cd dist
-
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
-git init
-git checkout -b main
-git add -A
-git commit -m 'deploy'
-
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:0kadak/ngwordgame.git main:gh-pages
-
-cd -
+#add&push to remote repo
+git add dist -f && git commit -m 'deployed'
+git subtree push --prefix dist origin gh-pages
