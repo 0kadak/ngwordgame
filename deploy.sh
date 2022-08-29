@@ -4,7 +4,7 @@
 #trying to push to gh-pages(only build files), a subtree of main(all files)
 
 # abort on errors
-set -e
+#set -e
 
 # build
 npm run build
